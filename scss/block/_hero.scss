@@ -1,0 +1,46 @@
+// hero
+
+.hero {
+    padding-block: 80px;
+}
+
+.hero__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero__content {
+    max-width: 470px;
+}
+
+.hero__title {
+    color: var(--text-black);
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 130%;
+    margin-bottom: 16px;
+}
+
+.hero__text {
+    color: var(--text-black);
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 16px;
+}
+.hero__img-block {
+    max-width: 458px;
+    height: 258px;
+    position: relative;
+    &::before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        width: 150px;
+        height: 106px;
+        background-image: url(../../img/youtube-play-button.png);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+}

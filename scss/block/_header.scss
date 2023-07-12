@@ -1,0 +1,44 @@
+// header 
+
+.header {
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.10);
+}
+
+.main_header__container {
+    display: flex;
+    align-items: center;
+}
+
+.main_header__navbar {
+    margin-left: auto;
+}
+
+.main_header__list {
+    display: flex;
+    margin-right: 8px;
+}
+
+.main_header__link {
+    padding: 16px;
+    color: var(--text-black);
+
+    &:hover {
+        color: var(--primary-color);
+    }
+}
+
+.main_header__tel-link,.primary__btn {
+    padding: 8px 16px;
+    background-color: var(--primary-color);
+    color: var(--text-white);
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 24px;
+    border: 2px solid var(--primary-color);
+    transition: all .4s ease;
+    &:hover {
+        background-color: var(--color-white);
+        color: var(--primary-color);
+    }
+}
